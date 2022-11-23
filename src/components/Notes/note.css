@@ -1,14 +1,16 @@
 .notes-container {
   width: 100%;
-  max-width: calc(100% - 2rem);
+  max-width: var(--container-width);
   margin: 0 auto;
   padding: 1rem;
   border-radius: var(--border-radius);
   margin-top: -6rem;
   box-shadow: var(--box-shadow-small);
+}
 
-  @media (min-width: 30em) {
-    max-width: var(--container-width);
+@media (max-width: 30em) {
+  .notes-container {
+    max-width: calc(100% - 2rem);
   }
 }
 
